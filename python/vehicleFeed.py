@@ -13,7 +13,8 @@ for entity in feed.entity:
       if entity.trip_update.vehicle.id.startswith('-1366625436'):
           print entity.trip_update.trip.trip_id
           print entity.trip_update.trip.route_id
-          print entity.trip_update.vehicle.id.split('_')
+          fleetNo = entity.trip_update.vehicle.id.split('_')
+          print '{} {}'.format('Bus number:', fleetNo[1])
           for stopUpdate in entity.trip_update.stop_time_update:
             print stopUpdate.stop_id
             # Put into array, check array length

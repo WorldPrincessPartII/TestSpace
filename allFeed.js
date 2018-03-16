@@ -3,7 +3,7 @@ var request = require('request');
 
 var requestSettings = {
   method: 'GET',
-  url: 'URL OF YOUR GTFS-REALTIME SOURCE GOES HERE',
+  url: 'https://gtfsrt.api.translink.com.au/Feed/SEQ',
   encoding: null
 };
 request(requestSettings, function (error, response, body) {

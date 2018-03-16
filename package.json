@@ -1,0 +1,24 @@
+{
+  "name": "TestSpace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "allFeed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WorldPrincessPartII/TestSpace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WorldPrincessPartII/TestSpace/issues"
+  },
+  "homepage": "https://github.com/WorldPrincessPartII/TestSpace#readme",
+  "dependencies": {
+    "gtfs-realtime-bindings": "0.0.4",
+    "request": "^2.85.0"
+  }
+}

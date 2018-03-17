@@ -14,7 +14,7 @@ for entity in feed.entity:
           print entity.trip_update.trip.trip_id
           print entity.trip_update.trip.route_id
           fleetNo = entity.trip_update.vehicle.id.split('_')
-          print '{} {}'.format('Bus number:', fleetNo[1])
+          print '{} {}'.format('BCC Bus number:', fleetNo[1])
           f = open("seq.txt",'a')
           f.write('{} {} \n'.format('Bus number:', fleetNo[1]))
           f.close()

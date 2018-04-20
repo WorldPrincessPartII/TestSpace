@@ -21,14 +21,14 @@ public class StopData {
                 GtfsRealtime.TripUpdate.StopTimeUpdate stopUpdate = entity.getTripUpdate().getStopTimeUpdate(i);
                 if (stopUpdate.getStopId().equals(stop)) {
                     long timeCurrent = System.currentTimeMillis() / 1000;
-                    long timeArrival = stopUpdate.getArrival().getTime();
+                    long timeArrival = stopUpdate.getDeparture().getTime();
 
                     int timeGap = (int) (timeArrival - timeCurrent);
 
                     if (timeGap >= 0){
-                        String rawVehichle = entity.getTripUpdate().getVehicle().getId().split("_")[1];
+                        String rawVehicle = entity.getTripUpdate().getVehicle().getId().split("_")[1];
 
-                        int fleetNo = Integer.parseInt(rawVehichle);
+                        int fleetNo = Integer.parseInt(rawVehicle);
 
                         String routeSt = entity.getTripUpdate().getTrip().getRouteId().split("-")[0];
 

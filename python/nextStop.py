@@ -51,7 +51,6 @@ feed.ParseFromString(response.read())
 for entity in feed.entity:
   if entity.HasField('trip_update'):
       if entity.trip_update.vehicle.id.startswith(bus):
-          #print entity.trip_update.trip.trip_id
           routeStr = str(entity.trip_update.trip.route_id)
           print getRouteNameFormatted(routeStr)
           print "Stops:"
